@@ -1,4 +1,5 @@
-//exercise
+
+	//exercise
 	//1.show all students
 	//2.creat a new student
 	//3.save & exit
@@ -30,6 +31,7 @@ while(choose === 1) {
 	choose++;
 	
 }
+var allStudent = [];
 while(choose === 2) 
 {
 	var student = {};
@@ -42,8 +44,10 @@ while(choose === 2)
 	var ID = readlineSync.question('please enter your ID: ');
 	student.ID = parseInt(ID);
 
-	var convertStringify = JSON.stringify(student);
+	allStudent.push(student);
+	var convertStringify = JSON.stringify(allStudent);
 	var writeFile = fs.writeFileSync('./data.json', convertStringify);
+	
 
 	var option = ['show all students', 'creat a new student', 'save & exit'];
 	var choose = readlineSync.keyInSelect(option, 'please choose one of these option');
