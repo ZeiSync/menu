@@ -1,18 +1,4 @@
-/**
-Json object
-stringify - convert object to JSON string
-parse - convert JSON string  to  an object
-*/
-/*
-var myDog = {name: "meow", age:3, dead: true};
-var myDogStringify = JSON.stringify(myDog);
-console.log(myDogStringify);
-
-var myCatStringify = '{"name": "RAWN", "age": 2, "dead": false}';
-var myCatParse = JSON.parse(myCatStringify);
-console.log(myCatParse);
-*/
-	//exercise
+//exercise
 	//1.show all students
 	//2.creat a new student
 	//3.save & exit
